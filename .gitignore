@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+__pycache__/
+
+# Model files
+*.pkl
+
+# Uploaded / generated data
+*.csv
+static/*.png
+
+# Python cache
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
