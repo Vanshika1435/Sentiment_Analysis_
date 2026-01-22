@@ -159,7 +159,7 @@
     <!-- Single Message -->
     <form method="POST">
         <h3>Analyze Single Message</h3>
-        <textarea name="text" placeholder="Type your message here..."></textarea>
+        <textarea name="text" placeholder="Type your message to analyze..."></textarea>
         <br>
         <button type="submit">Analyze</button>
     </form>
@@ -182,7 +182,7 @@
     {% if df_results is not none and not df_results.empty %}
     <div class="result-box">
         <h3>Chat Analysis</h3>
-
+        <!-- Chat messages will be displayed here -->
         <div class="chat-window" id="chatWindow">
             {% for row in df_results.itertuples() %}
                 <div class="chat-bubble {% if loop.index % 2 == 0 %}right{% else %}left{% endif %}">
