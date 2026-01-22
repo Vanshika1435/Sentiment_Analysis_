@@ -18,8 +18,9 @@ def home():
     sentiment_class = None
     df_results = None
 
-    # -------- Single Message --------
+    # ---------- Single sentence input ----------
     if request.method == "POST" and "text" in request.form:
+        # Clean and predict sentiment for a single message
         text = request.form["text"]
 
         if text.strip() != "":
